@@ -7,21 +7,35 @@
 
 import Foundation
 
+enum CalculatorError: Error {
+    case negativeNumbersFound(String)
+}
+
 struct KataStringCalculator {
-    func sum(_ string: String) -> Int {
+    func sum(_ string: String) throws -> Int {
+        if string == "" { return 0 }
+        
         let workingStr = string.replacingOccurrences(of: "\n", with: ",")
-        if workingStr.contains(",") {
-            return workingStr.split(separator: ",").reduce(0, { (prevNumber, strNumber) -> Int in
-                if let intNumb = Int(strNumber) {
-                    return prevNumber + intNumb
+        
+        var invalidNumbers: [Int] = []
+        var validNumbers: [Int] = []
+        
+        workingStr.split(separator: ",").forEach { strNumber in
+            if let intNum = Int(strNumber) {
+                if intNum >= 0 {
+                    validNumbers.append(intNum)
                 } else {
-                    fatalError("Foraneous character inputted, please add a new feature.")
+                    invalidNumbers.append(intNum)
                 }
-            })
-        } else if let number = Int(workingStr) {
-            return number
-        } else {
-            return 0
+            } else {
+                fatalError("Ups, you need new features")
+            }
         }
+        
+        if invalidNumbers.count > 0 {
+            throw CalculatorError.negativeNumbersFound("\(invalidNumbers.map(String.init).joined(separator: ","))")
+        }
+        
+        return validNumbers.reduce(0, +)
     }
 }
