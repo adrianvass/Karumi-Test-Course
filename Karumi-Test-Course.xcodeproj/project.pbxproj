@@ -10,6 +10,8 @@
 		086129CC6A6C401B0ECC655A /* Pods_Karumi_Test_CourseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B23EAD9E0E5AE0788D3D7D1 /* Pods_Karumi_Test_CourseTests.framework */; };
 		19BD4BC0A8895376A9234990 /* Pods_Karumi_Test_CourseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DC97110D0909492BEB42F6 /* Pods_Karumi_Test_CourseUITests.framework */; };
 		2F8CF7A40057CD5D62794C95 /* Pods_Karumi_Test_Course.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01112355A3485784CE7EC3D /* Pods_Karumi_Test_Course.framework */; };
+		5410B44E1FBA032F005D2BA0 /* KataStringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410B44D1FBA032F005D2BA0 /* KataStringCalculator.swift */; };
+		5410B44F1FBA0455005D2BA0 /* KataStringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410B44D1FBA032F005D2BA0 /* KataStringCalculator.swift */; };
 		54BB0A201FB9FEE2009EDA5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB0A1F1FB9FEE2009EDA5B /* AppDelegate.swift */; };
 		54BB0A221FB9FEE2009EDA5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB0A211FB9FEE2009EDA5B /* ViewController.swift */; };
 		54BB0A251FB9FEE2009EDA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BB0A231FB9FEE2009EDA5B /* Main.storyboard */; };
@@ -41,6 +43,7 @@
 		120C6E587FD23DB2825FA8A8 /* Pods-Karumi-Test-CourseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Karumi-Test-CourseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Karumi-Test-CourseUITests/Pods-Karumi-Test-CourseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1CCC5A7FC1558CA480FF353C /* Pods-Karumi-Test-Course.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Karumi-Test-Course.release.xcconfig"; path = "Pods/Target Support Files/Pods-Karumi-Test-Course/Pods-Karumi-Test-Course.release.xcconfig"; sourceTree = "<group>"; };
 		3E27169FD594EE38FC08AF35 /* Pods-Karumi-Test-CourseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Karumi-Test-CourseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Karumi-Test-CourseTests/Pods-Karumi-Test-CourseTests.release.xcconfig"; sourceTree = "<group>"; };
+		5410B44D1FBA032F005D2BA0 /* KataStringCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataStringCalculator.swift; sourceTree = "<group>"; };
 		54BB0A1C1FB9FEE2009EDA5B /* Karumi-Test-Course.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Karumi-Test-Course.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BB0A1F1FB9FEE2009EDA5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BB0A211FB9FEE2009EDA5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 				54BB0A261FB9FEE2009EDA5B /* Assets.xcassets */,
 				54BB0A281FB9FEE2009EDA5B /* LaunchScreen.storyboard */,
 				54BB0A2B1FB9FEE2009EDA5B /* Info.plist */,
+				5410B44D1FBA032F005D2BA0 /* KataStringCalculator.swift */,
 			);
 			path = "Karumi-Test-Course";
 			sourceTree = "<group>";
@@ -454,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5410B44E1FBA032F005D2BA0 /* KataStringCalculator.swift in Sources */,
 				54BB0A221FB9FEE2009EDA5B /* ViewController.swift in Sources */,
 				54BB0A201FB9FEE2009EDA5B /* AppDelegate.swift in Sources */,
 			);
@@ -464,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BB0A351FB9FEE2009EDA5B /* Karumi_Test_CourseTests.swift in Sources */,
+				5410B44F1FBA0455005D2BA0 /* KataStringCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

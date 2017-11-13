@@ -8,8 +8,9 @@
 import XCTest
 @testable import Karumi_Test_Course
 
-class Karumi_Test_CourseTests: XCTestCase {
-    
+class KataStringCalulatorTests: XCTestCase {
+    let stringCalculator = KataStringCalculator()
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,16 +21,23 @@ class Karumi_Test_CourseTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCalculatorShouldReturnZeroOnAnEmptyString() {
+        XCTAssertEqual(0, stringCalculator.sum(""))
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testCalculatorShouldReturnNumberWhenWeOnlySumOneNumber() {
+        XCTAssertEqual(1, stringCalculator.sum("1"))
     }
     
+    func testCalculateSumWhenGivenTwoParamsSeparatedByComa() {
+        XCTAssertEqual(3, stringCalculator.sum("1,2"))
+    }
+    
+    func testCalculateSumWhenGivenMultipleNumbersSeparatedByComa() {
+        XCTAssertEqual(21, stringCalculator.sum("1,2,3,4,5,6"))
+    }
+    
+    func testCalculateSumWhenGivenNumbersAreAlsoSeparatedBynewLines() {
+        XCTAssertEqual(21, stringCalculator.sum("1,2\n3,4,5\n6"))
+    }
 }
